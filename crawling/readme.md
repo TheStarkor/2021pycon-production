@@ -1,5 +1,14 @@
 # Crawling
 
+### 실행
+1. profile 변경
+  `serverless.yml` 내부 `provider.profile
+2. `serverless-python-requirements`플러그인 설치 후 deploy (docker 실행중인 환경)
+```
+$ npm i
+$ sls deploy
+```
+
 ### `Serverless.yml`
 
 ```

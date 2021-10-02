@@ -6,6 +6,7 @@ provider:
   name: aws
   runtime: python3.8
   region: ap-northeast-2
+  profile: pycon2021-demo
   lambdaHashingVersion: 20201221
 
 plugins:
