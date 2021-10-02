@@ -1,7 +1,8 @@
 # 2021pycon-production
-PyCon 2021 - 매일이 새로운 초기 스타트업 파이썬과 함께라면?
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheStarkor%2F2021pycon-production&count_bg=%23FFE873&title_bg=%23646464&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://www.notion.so/thestar/e6f6b641bd8f493085e5f044182dcae3)
+
+`PyCon 2021 - 매일이 새로운 초기 스타트업 파이썬과 함께라면?`의 레포지토리입니다. 짧은 강연의 보조자료로 필요한 환경 설정 및 시간이 부족하여 강연에서 다루지 못한 부분이 많아 추가 예제를 포함하고 있습니다.
 
 ## 환경 설정
 
@@ -18,6 +19,8 @@ PyCon 2021 - 매일이 새로운 초기 스타트업 파이썬과 함께라면?
   - `$ npm install -g serverless`
 
 ## 예제
+
+서비스에서 주로 많이 사용하는 image upload 서버, 크롤링 그리고 Gateway를 예제로 작성하였습니다. 라이브러리 설치, aws 연결 및 환경 설정들에 대한 예시를 포함하고 있습니다.
 
 ### Image Upload with S3
 
