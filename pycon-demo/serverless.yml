@@ -1,19 +1,12 @@
-service: pycon2021
+service: pycon-demo
 
 frameworkVersion: '2'
 
 provider:
   name: aws
   runtime: python3.8
-  profile: pycon2021
+  profile: pycon2021-demo
   lambdaHashingVersion: 20201221
-
-plugins:
-  - serverless-python-requirements
-
-custom:
-  pythonRequirements:
-    dockerizePip: non-linux
 
 functions:
   hello:
@@ -22,5 +15,9 @@ functions:
       - http:
           path: hello
           method: GET
-
-          
+  excel:
+    handler: handler.pycon
+    events:
+      - http:
+          path: excel
+          method: GET
