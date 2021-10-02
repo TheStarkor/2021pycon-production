@@ -18,16 +18,16 @@ def hello():
 
 @app.route("/", methods=["POST"])
 def upload():
-    # try:
-    if flask.request.files.get("img"):
-        flask.request.files["img"].save('pycon2021.jpg')
-        s3 = s3_connection()
-        s3.upload_file('pycon2021.jpg', os.environ.get("BUCKET_NAME"), 'pycon2021.jpg', ExtraArgs={'ACL':'public-read'})
-    return flask.jsonify({
-        'uri': f'https://{os.environ.get("BUCKET_NAME")}.s3.ap-northeast-2.amazonaws.com/pycon2021.jpg'
-    })
-    # except:
-    #     return flask.abort(404)
+    try:
+        if flask.request.files.get("img"):
+            flask.request.files["img"].save('pycon2021.jpg')
+            s3 = s3_connection()
+            s3.upload_file('pycon2021.jpg', os.environ.get("BUCKET_NAME"), 'pycon2021.jpg', ExtraArgs={'ACL':'public-read'})
+        return flask.jsonify({
+            'uri': f'https://{os.environ.get("BUCKET_NAME")}.s3.ap-northeast-2.amazonaws.com/pycon2021.jpg'
+        })
+    except:
+        return flask.abort(404)
             
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
