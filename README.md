@@ -12,7 +12,7 @@ PyCon 2021 - 매일이 새로운 초기 스타트업 파이썬과 함께라면?
 - AWS 계정 ([AWS console](https://console.aws.amazon.com/console/home))
 
 ### Infra 설정
-- [EC2](https://www.notion.so/thestar/EC2-7fde9b510fdb49d6917bdb27ec1babd7)
+- [EC2](https://thestar.notion.site/EC2-7fde9b510fdb49d6917bdb27ec1babd7)
 - [CodeStar](https://thestar.notion.site/CodeStar-739b28470daf4b569e68c7157faca49b)
 - Serverless framework
   - `$ npm install -g serverless`
