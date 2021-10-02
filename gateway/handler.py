@@ -8,9 +8,10 @@ def main(event, context):
         resp = requests.get('https://2021.pycon.kr/')
 
         response = {
-            "statusCode": resp.status,
-            "body": json.dumps(resp.data.decode('utf-8'))
+            "statusCode": resp.status_code,
+            "body": resp.text
         }
+        
     except:
         response = {
             "statusCode": 500,
