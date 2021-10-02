@@ -130,3 +130,5 @@ dmypy.json
 *.pem
 
 .serverless/
+.flaskenv
+node_modules/

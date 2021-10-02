@@ -21,18 +21,13 @@ PyCon 2021 - 매일이 새로운 초기 스타트업 파이썬과 함께라면?
 
 ### Image Upload with S3
 
-1. EC2 and CodeStar
-
-2. Serverless
+- [Flask(EC2 or CodeStar)](https://github.com/TheStarkor/2021pycon-production/tree/main/upload-flask)
 
 ### 데이터 크롤링
 
-
-1. EC2 and CodeStar
-
-2. Serverless
+- [Serverless](https://github.com/TheStarkor/2021pycon-production/tree/main/crawling)
 
 ### API Gateway
 
-- Serverless
+- [Serverless](https://github.com/TheStarkor/2021pycon-production/tree/main/gateway)
 
